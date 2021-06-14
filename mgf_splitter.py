@@ -51,8 +51,8 @@ def split_raw_file_spectra(mgf):
         folder = os.makedirs(mgf.rstrip('.mgf'))
     except:
         print ('Folder ' + mgf.rstrip('.mgf') + ' already present')
-    if k.split('.')[-1] == 'raw':
-        for k, v in dicts_mz.items():
+    for k, v in dicts_mz.items():
+        if k.split('.')[-1] == 'raw':
             outfile = os.path.join(mgf.rstrip('.mgf'),k.rstrip('.raw') + '.mgf') 
             write_file = open(outfile, 'w')
             for iters in range(len(v)):
@@ -67,8 +67,8 @@ def split_raw_file_spectra(mgf):
                     write_file.write(iter_mz  + '\n')
                 write_file.write("END IONS" + "\n")
             write_file.close()
-    elif k.split('.')[-1] == 'mgf':
-        for k, v in dicts_mz.items():
+            
+        elif k.split('.')[-1] == 'mgf':
             outfile = os.path.join(mgf.rstrip('.mgf'),k) 
             write_file = open(outfile, 'w')
             for iters in range(len(v)):
