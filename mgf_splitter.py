@@ -1,5 +1,8 @@
 ## This tool is developed by Mr. Sandeep Kasargod and Mr. Chinmaya Narayana K.
 ## If you have any queries please contact chinmaya_k@yenepoya.edu.in or sandeepk@yenepoya.edu.in 
+## This tool is licensed under MIT License
+## For more information please visit https://github.com/chinmayaNK22/MGF-file-splitter
+
 
 import argparse
 import os
