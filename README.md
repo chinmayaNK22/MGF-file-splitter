@@ -7,4 +7,7 @@ positional arguments:
 
 optional arguments:
   -h, --help  show this help message and exit
-```
+ 
+ command line argument:
+ >python mgf_splitter.py unassigned.mgf
+ ```
