@@ -1,5 +1,5 @@
 # MGF-file-splitter
-Extracts raw file specific spectra from an unassigned spectra file (.mgf) from Proteome Discoverer and generate new .mgf files specific to raw files
+Extracts raw file specific spectra from an unassigned spectra file (.mgf) from Proteome Discoverer and generate new .mgf files with scans specific to raw files
 
 ```
 positional arguments:
